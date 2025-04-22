@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Enrollment Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Student Enrollment Form</h2>
+    <form id="studentForm" method="post">
+        <div class="form-group">
+            <label for="rollNo">Roll No:</label>
+            <input type="text" class="form-control" id="rollNo" name="rollNo" placeholder="Enter Roll No" required>
+        </div>
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter Full Name" disabled>
+        </div>
+        <div class="form-group">
+            <label for="class">Class:</label>
+            <input type="text" class="form-control" id="class" name="class" placeholder="Enter Class" disabled>
+        </div>
+        <div class="form-group">
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" class="form-control" id="birthDate" name="birthDate" disabled>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea class="form-control" id="address" name="address" placeholder="Enter Address" disabled></textarea>
+        </div>
+        <div class="form-group">
+            <label for="enrollDate">Enrollment Date:</label>
+            <input type="date" class="form-control" id="enrollDate" name="enrollDate" disabled>
+        </div>
+        <div class="form-group">
+            <input type="button" class="btn btn-primary" id="saveBtn" value="Save" onclick="saveStudent();" disabled>
+            <input type="button" class="btn btn-primary" id="changeBtn" value="Change" onclick="changeStudent();" disabled>
+            <input type="button" class="btn btn-primary" id="resetBtn" value="Reset" onclick="resetForm();" disabled>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
